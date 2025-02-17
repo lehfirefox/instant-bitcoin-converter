@@ -12,12 +12,6 @@ const Index = () => {
       <Hero />
       <Benefits />
       <HowItWorks />
-      <div className="py-20 px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
-          Já imaginou dobrar seu número de transações sem precisar trabalhar mais por isso?
-        </h2>
-        <CTA />
-      </div>
       <FAQ />
       <CTA />
       <Footer />
