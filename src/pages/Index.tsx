@@ -18,7 +18,7 @@ const Index = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
           Já imaginou dobrar seu número de transações sem precisar trabalhar mais por isso?
         </h2>
-        <Button size="lg" className="bg-bitcoin hover:bg-bitcoin-dark text-white text-lg px-8 h-14">
+        <Button size="lg" className="bg-[#8B5CF6] hover:bg-[#7c3aed] text-white text-lg px-8 h-14">
           Quero ser um parceiro
           <ArrowRight className="ml-2 w-5 h-5" />
         </Button>
