@@ -12,7 +12,7 @@ export const CTA = () => {
         <p className="text-xl text-gray-600">
           Junte-se a centenas de parceiros que já automatizaram recebimentos em cripto com agilidade e segurança.
         </p>
-        <Button size="lg" className="bg-bitcoin hover:bg-bitcoin-dark text-white text-lg px-8 h-14">
+        <Button size="lg" className="bg-[#8B5CF6] hover:bg-[#7c3aed] text-white text-lg px-8 h-14">
           <Rocket className="mr-2 w-5 h-5" />
           Quero ser parceiro agora
         </Button>

@@ -34,7 +34,7 @@ export const HowItWorks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <Card key={index} className="p-6 text-left relative backdrop-blur-sm bg-white/90">
-              <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-bitcoin flex items-center justify-center text-white font-bold">
+              <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-[#8B5CF6] flex items-center justify-center text-white font-bold">
                 {step.number}
               </div>
               <h3 className="text-xl font-semibold mb-3 mt-2">{step.title}</h3>

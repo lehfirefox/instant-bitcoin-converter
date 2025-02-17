@@ -36,8 +36,8 @@ export const Benefits = () => {
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-6 backdrop-blur-sm bg-white/90 hover:shadow-lg transition-shadow">
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-bitcoin/10">
-                  <benefit.icon className="w-6 h-6 text-bitcoin" />
+                <div className="p-3 rounded-full bg-[#8B5CF6]/10">
+                  <benefit.icon className="w-6 h-6 text-[#8B5CF6]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
