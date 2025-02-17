@@ -5,6 +5,8 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
@@ -12,6 +14,15 @@ const Index = () => {
       <Hero />
       <Benefits />
       <HowItWorks />
+      <div className="py-20 px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          Já imaginou dobrar seu número de transações sem precisar trabalhar mais por isso?
+        </h2>
+        <Button size="lg" className="bg-bitcoin hover:bg-bitcoin-dark text-white text-lg px-8 h-14">
+          Quero ser um parceiro
+          <ArrowRight className="ml-2 w-5 h-5" />
+        </Button>
+      </div>
       <FAQ />
       <CTA />
       <Footer />
