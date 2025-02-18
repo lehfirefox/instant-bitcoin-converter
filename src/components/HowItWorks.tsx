@@ -26,19 +26,19 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Como Funciona?</h2>
-        <p className="text-xl text-gray-600 mb-16">Do PIX para Bitcoin em menos de 5 minutos</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Como Funciona?</h2>
+        <p className="text-xl text-gray-400 mb-16">Do PIX para Bitcoin em menos de 5 minutos</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="p-6 text-left relative backdrop-blur-sm bg-white/90">
+            <Card key={index} className="p-6 text-left relative glass-morphism">
               <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-[#8B5CF6] flex items-center justify-center text-white font-bold">
                 {step.number}
               </div>
-              <h3 className="text-xl font-semibold mb-3 mt-2">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+              <h3 className="text-xl font-semibold mb-3 mt-2 text-white">{step.title}</h3>
+              <p className="text-gray-400">{step.description}</p>
             </Card>
           ))}
         </div>

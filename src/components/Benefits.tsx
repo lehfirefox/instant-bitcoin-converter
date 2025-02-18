@@ -27,21 +27,21 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-background/50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
           Por que escolher a nossa plataforma?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="p-6 backdrop-blur-sm bg-white/90 hover:shadow-lg transition-shadow">
+            <Card key={index} className="p-6 glass-morphism">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-[#8B5CF6]/10">
                   <benefit.icon className="w-6 h-6 text-[#8B5CF6]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-white">{benefit.title}</h3>
+                  <p className="text-gray-400">{benefit.description}</p>
                 </div>
               </div>
             </Card>

@@ -21,12 +21,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <Hero />
+    <div className="min-h-screen bg-background">
+      <Hero onCTAClick={handleCTAClick} />
       <Benefits />
       <HowItWorks />
       <div className="py-20 px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
           Já imaginou dobrar seu número de transações sem precisar trabalhar mais por isso?
         </h2>
         <Button 
