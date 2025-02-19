@@ -10,15 +10,39 @@ export const Hero = ({ onCTAClick }: HeroProps) => {
   return (
     <section className="min-h-[90vh] flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Technology-inspired background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,rgba(139,92,246,0.05),rgba(30,27,75,0.3))]" />
-      <div className="absolute inset-0" style={{
-        backgroundImage: `
-          radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.05) 2%, transparent 0%),
-          radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.05) 2%, transparent 0%)
-        `,
-        backgroundSize: '100px 100px',
-      }} />
-      <div className="absolute inset-0 backdrop-blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_70%)]" />
+      
+      {/* Grid pattern */}
+      <div className="absolute inset-0" 
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(139, 92, 246, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px',
+          maskImage: 'radial-gradient(circle at center, black, transparent)',
+        }}
+      />
+
+      {/* Floating elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-purple-500/10"
+            style={{
+              width: Math.random() * 100 + 50 + 'px',
+              height: Math.random() * 100 + 50 + 'px',
+              left: Math.random() * 100 + '%',
+              top: Math.random() * 100 + '%',
+              animation: `float ${Math.random() * 10 + 20}s linear infinite`,
+              animationDelay: `-${Math.random() * 20}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="absolute inset-0 backdrop-blur-[100px]" />
       
       {/* Content */}
       <div className="relative w-full max-w-4xl mx-auto text-center space-y-8 z-10">
