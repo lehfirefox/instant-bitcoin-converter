@@ -13,8 +13,8 @@ export const CTA = ({ onClick }: CTAProps) => {
         <h2 className="text-3xl md:text-4xl font-bold">
           Está pronto para escalar seu negócio P2P?
         </h2>
-        <p className="text-xl text-gray-600">
-          Junte-se a centenas de parceiros que já automatizaram recebimentos em cripto com agilidade e segurança.
+        <p className="text-xl text-gray-300">
+          Junte-se a diversos parceiros que já automatizaram recebimentos em cripto com agilidade e segurança.
         </p>
         <Button 
           size="lg" 

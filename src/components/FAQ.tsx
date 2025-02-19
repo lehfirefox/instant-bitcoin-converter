@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Há custos para ser parceiro?",
-    answer: "Não. Apenas cobramos o percentual de 5% em cima do montante total do valor transacionado.",
+    answer: "Não. Apenas cobramos o valor de R$2,00 + 1.5% do montante total do valor transacionado.",
   },
   {
     question: "Funciona para outras criptomoedas além do Bitcoin?",

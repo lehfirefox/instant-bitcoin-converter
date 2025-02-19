@@ -15,7 +15,7 @@ const steps = [
   {
     number: "3",
     title: "Transferências simultâneas",
-    description: "Transferimos o valor que irá para você e o que irá para a carteira do cliente (no caso do P2P)",
+    description: "Transferimos o valor que irá para você e o que irá para a carteira do cliente (em caso de split)",
   },
   {
     number: "4",

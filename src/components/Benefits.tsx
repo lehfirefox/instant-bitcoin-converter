@@ -11,7 +11,7 @@ const benefits = [
   {
     icon: Bell,
     title: "Notificações instantâneas",
-    description: "Saiba exatamente quando o pagamento chegar. Alertas em tempo real via e-mail, SMS ou integração com seu sistema preferido.",
+    description: "Saiba exatamente quando o pagamento chegar. Alertas em tempo real via webhook para integrar ao seu sistema preferido.",
   },
   {
     icon: Shield,
