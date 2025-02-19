@@ -8,8 +8,20 @@ interface HeroProps {
 
 export const Hero = ({ onCTAClick }: HeroProps) => {
   return (
-    <section className="min-h-[90vh] flex flex-col items-center justify-center px-4 py-20">
-      <div className="relative w-full max-w-4xl mx-auto text-center space-y-8">
+    <section className="min-h-[90vh] flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
+      {/* Technology-inspired background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,rgba(139,92,246,0.05),rgba(30,27,75,0.3))]" />
+      <div className="absolute inset-0" style={{
+        backgroundImage: `
+          radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.05) 2%, transparent 0%),
+          radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.05) 2%, transparent 0%)
+        `,
+        backgroundSize: '100px 100px',
+      }} />
+      <div className="absolute inset-0 backdrop-blur-3xl" />
+      
+      {/* Content */}
+      <div className="relative w-full max-w-4xl mx-auto text-center space-y-8 z-10">
         <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight animate-fadeIn">
           Converta PIX em Bitcoin Instantaneamente pela{" "}
           <span className="text-[#8B5CF6] inline-flex items-center">
